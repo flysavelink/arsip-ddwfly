@@ -120,16 +120,16 @@ async function loadInternalLinks() {
     try {
         const response = await fetch('internal_links.json?t=' + new Date().getTime());
         const data = await response.json();
-        // Reverse order so newest links (added at end of file) show at top
-        internalLinksData = data.reverse().filter(item => !deletedUrls.includes(item.url));
+        // Urutan link mengikuti file JSON (yang terbaru sudah di atas)
+        internalLinksData = data.filter(item => !deletedUrls.includes(item.url));
 
         renderInternalLinks(internalLinksData);
         statusEl.innerHTML = `<i class="bi bi-link-45deg"></i> Database Link: <b>${internalLinksData.length} item</b> tersedia.`;
     } catch (err) {
         console.warn("Fetch links gagal, menggunakan mode offline...");
         if (typeof offlineLinksData !== 'undefined' && offlineLinksData.length > 0) {
-            // Reverse offline data also
-            internalLinksData = [...offlineLinksData].reverse().filter(item => !deletedUrls.includes(item.url));
+            // Urutan link mengikuti file JSON (yang terbaru sudah di atas)
+            internalLinksData = [...offlineLinksData].filter(item => !deletedUrls.includes(item.url));
             renderInternalLinks(internalLinksData);
             statusEl.innerHTML = `<i class="bi bi-link-45deg"></i> Offline Mode: <b>${internalLinksData.length} link</b> aktif.`;
         } else {
