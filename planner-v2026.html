@@ -73,11 +73,11 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th><i class="bi bi-calendar-event"></i> Tanggal</th>
-                                    <th><i class="bi bi-card-heading"></i> Judul Artikel</th>
-                                    <th><i class="bi bi-tag-fill"></i> Label</th>
-                                    <th><i class="bi bi-blockquote-left"></i> Meta Description</th>
-                                    <th style="text-align: center;">Aksi</th>
+                                    <th style="width: 13%;"><i class="bi bi-calendar-event"></i> Tanggal</th>
+                                    <th style="width: 27%;"><i class="bi bi-card-heading"></i> Judul Artikel</th>
+                                    <th style="width: 15%;"><i class="bi bi-tag-fill"></i> Label</th>
+                                    <th style="width: 35%;"><i class="bi bi-blockquote-left"></i> Meta Description</th>
+                                    <th style="width: 10%; text-align: center;">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="post-list-body">
@@ -98,10 +98,12 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th><i class="bi bi-lightning-charge"></i> Topik Niche</th>
-                                    <th><i class="bi bi-currency-dollar"></i> Estimasi CPC</th>
+                                    <th style="width: 18%;"><i class="bi bi-lightning-charge"></i> Topik Niche</th>
+                                    <th style="width: 12%;"><i class="bi bi-tags-fill"></i> Label</th>
+                                    <th style="width: 18%; text-align: center;"><i class="bi bi-currency-dollar"></i>
+                                        Estimasi CPC</th>
                                     <th><i class="bi bi-key-fill"></i> Saran Kata Kunci</th>
-                                    <th style="text-align: center;">Aksi</th>
+                                    <th style="width: 8%; text-align: center;">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="niche-list-body">
@@ -122,9 +124,9 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th><i class="bi bi-journal-text"></i> Judul Konten</th>
-                                    <th><i class="bi bi-globe"></i> Full URL Link</th>
-                                    <th style="text-align: center;">Aksi</th>
+                                    <th style="width: 40%;"><i class="bi bi-journal-text"></i> Judul Konten</th>
+                                    <th style="width: 50%;"><i class="bi bi-globe"></i> Full URL Link</th>
+                                    <th style="width: 10%; text-align: center;">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody id="link-list-body">
@@ -174,8 +176,111 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-ghost" onclick="closeModal('post-viewer')">Tutup</button>
-                <button class="btn btn-primary" onclick="copyViewerContent()">
-                    <i class="bi bi-clipboard-check"></i> Salin Kode HTML
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
+                    <button class="btn btn-ghost" onclick="openHookModal()"
+                        style="border-color: var(--accent); color: var(--accent); padding: 0.6rem 1rem;">
+                        <i class="bi bi-medium"></i> Medium
+                    </button>
+                    <button class="btn btn-ghost" onclick="openLinkedInModal()"
+                        style="border-color: #0077b5; color: #0077b5; padding: 0.6rem 1rem;">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </button>
+                    <button class="btn btn-ghost" onclick="openPinterestModal()"
+                        style="border-color: #bd081c; color: #bd081c; padding: 0.6rem 1rem;">
+                        <i class="bi bi-pinterest"></i> Pinterest
+                    </button>
+                    <button class="btn btn-primary" onclick="copyViewerContent()" style="padding: 0.6rem 1.2rem;">
+                        <i class="bi bi-clipboard-check"></i> Salin HTML
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL LINKEDIN VIEWER -->
+    <div class="modal-overlay" id="modal-linkedin-viewer" style="z-index: 10001;">
+        <div class="modal" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2><i class="bi bi-linkedin" style="color: #0077b5;"></i> LinkedIn Hook (Insight v2026)</h2>
+                <button class="btn btn-ghost btn-icon" onclick="closeModal('linkedin-viewer')"
+                    style="width: 36px; height: 36px; border-radius: 50%;">&times;</button>
+            </div>
+            <div class="modal-body" style="background: transparent;">
+                <div class="glass-card"
+                    style="padding: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div id="linkedin-content"
+                        style="white-space: pre-wrap; font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-main); font-size: 0.95rem;">
+                        <!-- LinkedIn Hook muncul di sini -->
+                    </div>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem; font-style: italic;">
+                    *Tips Lihlas: Bagikan insight profesional ini di LinkedIn untuk membangun personal branding &
+                    trafik.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" onclick="closeModal('linkedin-viewer')">Batal</button>
+                <button class="btn btn-primary" onclick="copyLinkedInContent()"
+                    style="background: #0077b5; border: none;">
+                    <i class="bi bi-clipboard2-check"></i> Salin LinkedIn
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-hook-viewer" style="z-index: 10001;">
+        <div class="modal" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2><i class="bi bi-medium"></i> Hook Medium (Premium v2026)</h2>
+                <button class="btn btn-ghost btn-icon" onclick="closeModal('hook-viewer')"
+                    style="width: 36px; height: 36px; border-radius: 50%;">&times;</button>
+            </div>
+            <div class="modal-body" style="background: transparent;">
+                <div class="glass-card"
+                    style="padding: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div id="hook-content"
+                        style="white-space: pre-wrap; font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-main); font-size: 0.95rem;">
+                        <!-- Hook Medium muncul di sini -->
+                    </div>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem; font-style: italic;">
+                    *Tips Lihlas: Posting hook ini di Medium sebagai intro, lalu tautkan ke ddwfly.com untuk backlink
+                    berkualitas.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" onclick="closeModal('hook-viewer')">Batal</button>
+                <button class="btn btn-primary" onclick="copyHookContent()">
+                    <i class="bi bi-clipboard2-check"></i> Salin Hook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PINTEREST VIEWER -->
+    <div class="modal-overlay" id="modal-pinterest-viewer" style="z-index: 10001;">
+        <div class="modal" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2><i class="bi bi-pinterest" style="color: #bd081c;"></i> Pinterest Hook (Visual v2026)</h2>
+                <button class="btn btn-ghost btn-icon" onclick="closeModal('pinterest-viewer')"
+                    style="width: 36px; height: 36px; border-radius: 50%;">&times;</button>
+            </div>
+            <div class="modal-body" style="background: transparent;">
+                <div class="glass-card"
+                    style="padding: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div id="pinterest-content"
+                        style="white-space: pre-wrap; font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-main); font-size: 0.95rem;">
+                        <!-- Pinterest Hook muncul di sini -->
+                    </div>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem; font-style: italic;">
+                    *Tips Lihlas: Pinterest menyukai kata kunci visual. Simpan pin ini untuk trafik jangka panjang.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-ghost" onclick="closeModal('pinterest-viewer')">Batal</button>
+                <button class="btn btn-primary" onclick="copyPinterestContent()"
+                    style="background: #bd081c; border: none;">
+                    <i class="bi bi-clipboard2-check"></i> Salin Pinterest
                 </button>
             </div>
         </div>

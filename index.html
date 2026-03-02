@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <style>
         :root {
@@ -57,6 +58,7 @@
             font-weight: 800;
             background: linear-gradient(135deg, #fff, var(--accent));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 0.5rem;
         }
@@ -151,6 +153,7 @@
             color: var(--text-dim);
             display: -webkit-box;
             -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -176,6 +179,34 @@
 
         footer strong {
             color: var(--accent);
+        }
+
+        /* --- NAVIGATION BUTTON --- */
+        .btn-nav-planner {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--primary), #6200ea);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 10px 25px -5px rgba(138, 43, 226, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-nav-planner:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px -8px rgba(138, 43, 226, 0.6);
+            filter: brightness(1.1);
+        }
+
+        .btn-nav-planner i {
+            font-size: 1.1rem;
         }
 
         /* LOADING SPIN */
@@ -205,6 +236,10 @@
             <h1>ARSIP DIGITAL DDWFLY</h1>
             <p>Pusat Referensi Konten Strategis & Backlink Hub</p>
             <div id="stats" class="archive-stats">Menghitung database...</div>
+            <br>
+            <a href="planner-v2026.html" class="btn-nav-planner">
+                <i class="bi bi-grid-1x2-fill"></i> BUKA PLANNER v2026
+            </a>
         </header>
 
         <div class="search-container">
