@@ -1,4 +1,16 @@
-﻿var offlineLinksData = [
+var internalLinkData = [
+    {
+        "title": "Tutorial Google Indexing API 2026: Panduan Lengkap Jalur Cepat Indexing (Edisi Lihlas)",
+        "url": "https://www.ddwfly.com/2026/03/tutorial-google-indexing-api-2026.html"
+    },
+    {
+        "title": "Cara cepat index artikel Google 2026: Strategi Jalur VVIP Indexing API (Edisi Lihlas)",
+        "url": "https://www.ddwfly.com/2026/03/cara-cepat-index-artikel-google-2026.html"
+    },
+    {
+        "title": "Tutorial Google Indexing API 2026: Cara Cepat Artikel Terindeks dalam Hitungan Menit (Edisi Lihlas)",
+        "url": "https://www.ddwfly.com/2026/03/tutorial-google-indexing-api-2026.html"
+    },
     {
         "title": "Olahraga Ringan di Rumah untuk Pemula (Versi Lihlas 2026)",
         "url": "https://www.ddwfly.com/2026/03/olahraga-ringan-di-rumah-untuk-pemula.html"
@@ -16,7 +28,7 @@
         "url": "https://www.ddwfly.com/2026/03/cloud-hosting-terbaik-indonesia-2026.html"
     },
     {
-        "title": "Drama Google AdSense Terbaru 2026: Perubahan Pembayaran CPM \u0026 Solusi Low Value Content",
+        "title": "Drama Google AdSense Terbaru 2026: Perubahan Pembayaran CPM & Solusi Low Value Content",
         "url": "https://www.ddwfly.com/2026/02/drama-google-adsense-cpm-low-value.html"
     },
     {
@@ -68,7 +80,7 @@
         "url": "https://www.ddwfly.com/2026/02/cara-mengatur-301-redirect.html"
     },
     {
-        "title": "Generative Engine Optimization Checklist 2026: Cara Agar Konten Dikutip ChatGPT \u0026 Gemini",
+        "title": "Generative Engine Optimization Checklist 2026: Cara Agar Konten Dikutip ChatGPT & Gemini",
         "url": "https://www.ddwfly.com/2026/02/geo-checklist-2026.html"
     },
     {
