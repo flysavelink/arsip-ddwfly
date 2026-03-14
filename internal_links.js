@@ -1,4 +1,42 @@
-var internalLinkData = [
+var globalInternalLinks = [
+    {
+        "title": "Kredit Pemilikan Rumah Tanpa DP 2026: Strategi Cerdas Punya Rumah Meski Gaji UMR!",
+        "url": "https://www.ddwfly.com/2026/03/kredit-pemilikan-rumah-tanpa-dp.html",
+        "labels": [
+            "Finance",
+            "KPR",
+            "Properti"
+        ]
+    },
+    {
+        "title": "Panduan Buka Jalur VVIP Google Indexing API 2026: Cara Index Artikel dalam 1 Menit!",
+        "url": "https://www.ddwfly.com/2026/03/tutorial-google-indexing-api-2026.html",
+        "labels": [
+            "SEO",
+            "Tutorial",
+            "AdSense"
+        ]
+    },
+    {
+        "title": "WordPress Hosting Murah 2026: Rekomendasi \"Dapur\" Website Kencang Pinjam Nama AI!",
+        "url": "https://www.ddwfly.com/2026/03/wordpress-hosting-murah-2026.html"
+    },
+    {
+        "title": "Rekomendasi Asuransi Kesehatan Premi Murah 2026: Proteksi Maksimal, Dompet Tetap Aman!",
+        "url": "https://www.ddwfly.com/2026/03/rekomendasi-asuransi-kesehatan-premi-murah.html"
+    },
+    {
+        "title": "Cara Menghindari Redundant AI Content di Search Engine: Panduan Autentik 2026",
+        "url": "https://www.ddwfly.com/2026/03/cara-menghindari-redundant-ai-content.html"
+    },
+    {
+        "title": "Kapsul Waktu Merauke Kapan Dibuka? Bedah Sejarah & Harapan 2085",
+        "url": "https://www.ddwfly.com/2026/03/kapsul-waktu-merauke-kapan-dibuka.html"
+    },
+    {
+        "title": "Misteri Kapsul Waktu Merauke 2085: Apa Isinya? (Bongkar Strategi Harapan Lihlas)",
+        "url": "https://www.ddwfly.com/2026/03/misteri-kapsul-waktu-merauke-2085.html"
+    },
     {
         "title": "Tutorial Google Indexing API 2026: Panduan Lengkap Jalur Cepat Indexing (Edisi Lihlas)",
         "url": "https://www.ddwfly.com/2026/03/tutorial-google-indexing-api-2026.html"

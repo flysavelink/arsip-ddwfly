@@ -84,7 +84,7 @@ function closeModal(modalType) {
     }
 }
 
-// 2.1 Fungsi Hook Medium
+// 2.1 Fungsi Hook FB / WA
 function openHookModal() {
     if (!currentOpenedArticleUrl) return;
     const article = postBankData.find(a => a.url === currentOpenedArticleUrl);
@@ -92,18 +92,18 @@ function openHookModal() {
 
     const hookContent = document.getElementById('hook-content');
     if (hookContent) {
-        hookContent.innerText = generateMediumHook(article);
+        hookContent.innerText = generateFbWaHook(article);
         const modal = document.getElementById('modal-hook-viewer');
         if (modal) modal.style.display = 'flex';
     }
 }
 
-function generateMediumHook(article) {
+function generateFbWaHook(article) {
     const title = article.title;
     const url = article.url;
-    const meta = article.meta_description || "Informasi terbaru dari ddwfly.com";
+    const meta = article.meta_description || "Banyak info penting yang sering kita lewatkan.";
 
-    return `(Dikutip dari ddwfly.com)\n\n# ${title}\n\nJujurly, sebagai orang yang sudah lama berkecimpung di dunia informasi digital, saya merasa topik ini sangat krusial untuk kita bahas di tahun 2026. Banyak orang yang masih bingung bagaimana memulai atau menghadapi tantangan di bidang ini.\n\n${meta}\n\nSaya sudah merangkum panduan lengkapnya secara mendalam, santai, dan profesional (Edisi Lihlas) yang bisa Sobat baca langsung sekarang juga.\n\nBaca selengkapnya di sini:\n👉 ${url}\n\nSemoga bermanfaat, dan mari kita diskusi lebih lanjut!\n#ddwfly #LihlasReview #BlogIndonesia #SEO2026`;
+    return `Eh, numpang share info penting nih! ☕\n\nBaru aja baca soal ini & ternyata banyak rahasia yang mungkin kita belum sadar, apalagi di tahun 2026 ini peraturannya pada berubah semua.\n\n📌 *${title}*\n\n"${meta}"\n\nBuat yang penasaran atau lagi butuh solusinya, saya udah bedah tuntas plus kasih trik aman-nya di sini 👇\n${url}\n\nSilakan dibaca & dishare ke yang lain biar pada tahu. Semoga bermanfaat ya! 🙏✨`;
 }
 
 function copyHookContent() {

@@ -119,5 +119,41 @@ var highCpcNicheData = [
         ],
         "category": "Cuan",
         "labels": "SEO, Tutorial, Adsense"
+    },
+    {
+        "topic": "Papua & Kapsul Waktu (Heritage)",
+        "cpc": "Stabil (Tourism Focus)",
+        "keywords": [
+            "Misteri Kapsul Waktu Merauke 2085: Apa Isinya?",
+            "Sejarah Pembangunan Monumen Kapsul Waktu Merauke",
+            "7 Mimpi Indonesia dalam Kapsul Waktu Merauke",
+            "Filosofi Arsitektur Monumen Kapsul Waktu: Makna di Balik Kemegahan",
+            "Mengintip Ekspedisi Kapsul Waktu: Perjalanan 34 Provinsi Mencari Mimpi",
+            "Kapsul Waktu Merauke vs Markas Avengers: Fakta atau Kebetulan?",
+            "Dampak Ekonomi Pariwisata Monumen Kapsul Waktu bagi Warga Lokal Merauke",
+            "Cara Menuju Monumen Kapsul Waktu Merauke: Panduan Transportasi Lengkap",
+            "Tips Foto Aesthetic di Monumen Kapsul Waktu Merauke ala Selebgram",
+            "Peran Anak Muda Papua dalam Menjaga Warisan Kapsul Waktu 2085",
+            "Perbandingan Monumen Kapsul Waktu Indonesia dengan Kapsul Waktu Terkenal Dunia",
+            "Mengapa Merauke Dipilih Jadi Lokasi Kapsul Waktu Indonesia?",
+            "Prediksi Indonesia 2085: Apa yang Berubah Saat Kapsul Waktu Dibuka?",
+            "Kapan Monumen Kapsul Waktu didirikan?",
+            "Impian Indonesia 2085 disimpan dimana?",
+            "Kapsul Waktu Merauke kapan dibuka?",
+            "Apakah kapsul waktu itu nyata?"
+        ],
+        "category": "Lifestyle",
+        "labels": "Wisata, Budaya, Papua"
+    },
+    {
+        "topic": "AI Economy & Future Work",
+        "cpc": "Sangat Tinggi ($12 - $50+)",
+        "keywords": [
+            "Peluang Cuan dari Content AI 2026: Tips Lihlas",
+            "Panduan Pajak bagi Content Creator AI 2026",
+            "Cara Menghindari Redundant AI Content di Search Engine"
+        ],
+        "category": "Tekno",
+        "labels": "Tekno, AI, Bisnis"
     }
 ];

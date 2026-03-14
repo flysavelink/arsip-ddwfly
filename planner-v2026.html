@@ -178,8 +178,8 @@
                 <button class="btn btn-ghost" onclick="closeModal('post-viewer')">Tutup</button>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;">
                     <button class="btn btn-ghost" onclick="openHookModal()"
-                        style="border-color: var(--accent); color: var(--accent); padding: 0.6rem 1rem;">
-                        <i class="bi bi-medium"></i> Medium
+                        style="border-color: #25D366; color: #25D366; padding: 0.6rem 1rem;">
+                        <i class="bi bi-whatsapp"></i> / <i class="bi bi-facebook"></i> Sosmed
                     </button>
                     <button class="btn btn-ghost" onclick="openLinkedInModal()"
                         style="border-color: #0077b5; color: #0077b5; padding: 0.6rem 1rem;">
@@ -227,10 +227,12 @@
             </div>
         </div>
     </div>
+    
+    <!-- MODAL FB/WA VIEWER -->
     <div class="modal-overlay" id="modal-hook-viewer" style="z-index: 10001;">
         <div class="modal" style="max-width: 600px;">
             <div class="modal-header">
-                <h2><i class="bi bi-medium"></i> Hook Medium (Premium v2026)</h2>
+                <h2><i class="bi bi-whatsapp" style="color: #25D366;"></i> Hook FB/WA (Premium v2026)</h2>
                 <button class="btn btn-ghost btn-icon" onclick="closeModal('hook-viewer')"
                     style="width: 36px; height: 36px; border-radius: 50%;">&times;</button>
             </div>
@@ -239,17 +241,16 @@
                     style="padding: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
                     <div id="hook-content"
                         style="white-space: pre-wrap; font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text-main); font-size: 0.95rem;">
-                        <!-- Hook Medium muncul di sini -->
+                        <!-- Hook FB/WA muncul di sini -->
                     </div>
                 </div>
                 <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem; font-style: italic;">
-                    *Tips Lihlas: Posting hook ini di Medium sebagai intro, lalu tautkan ke ddwfly.com untuk backlink
-                    berkualitas.
+                    *Tips Lihlas: Sebarkan copywriting ini di Grup WA Sekolah, RT, Alumni, atau Grup Facebook (Obrolan Warung Kopi).
                 </p>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-ghost" onclick="closeModal('hook-viewer')">Batal</button>
-                <button class="btn btn-primary" onclick="copyHookContent()">
+                <button class="btn btn-primary" onclick="copyHookContent()" style="background: #25D366; border: none;">
                     <i class="bi bi-clipboard2-check"></i> Salin Hook
                 </button>
             </div>
